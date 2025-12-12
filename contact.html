@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Gtu Prep Zone for suggestions, material requests or any query"/>
+  <title>Contact Us - Gtu Prep Zone</title>
+
+  <style>
+    /* Global Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #004aad;
+      color: #fff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background 0.3s;
+    }
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a.active {
+      background: #0066ff;
+      border-radius: 4px;
+    }
+    .toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+    }
+
+    /* Contact Section */
+    .contact-section { padding: 3rem 1rem; }
+    .section-title {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .card form { display: flex; flex-direction: column; }
+    .card label { margin-top: 1rem; font-weight: 600; }
+    .card input, .card textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    .card input:focus, .card textarea:focus {
+      border-color: #004aad;
+      outline: none;
+    }
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.8rem;
+      background: #004aad;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #0066ff; }
+
+    /* Direct Contact */
+    .direct-contact { text-align: center; margin-top: 2rem; }
+    .direct-contact a { color: #004aad; text-decoration: none; }
+    .direct-contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #004aad;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+      }
+      .navbar .nav-links.show { display: flex; }
+      .toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">GTU Perp Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h1 class="section-title">Get in Touch</h1>
+
+      <div class="card">
+        <form action="https://formspree.io/f/your-email-here" method="POST">
+          <label>Your Name</label>
+          <input type="text" name="name" required>
+
+          <label>Email Address</label>
+          <input type="email" name="email" required>
+
+          <label>Subject</label>
+          <input type="text" name="subject" required>
+
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="direct-contact">
+        <p class="lead">Or reach us directly:</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto: raksh2848@gmail.com">raksh2848@gmail.com</a><br>
+          <strong>Instagram:</strong> <a href="https://instagram.com/gtuprepzone" target="_blank">@gtuprepzone</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Gtu Prep Zone - All Rights Reserved | Made with Trivedi Raksh</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

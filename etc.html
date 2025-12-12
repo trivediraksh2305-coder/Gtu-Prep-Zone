@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>etc - GTU Semester 3 Materials</title>
+  <meta name="description" content="Download GTU Semester 3 etc Papers, Solutions, Important Questions PDF"/>
+
+  <style>
+    /* Reset + Layout */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; font-family: "Segoe UI", Arial, sans-serif; background: #f9f9f9; color: #333; }
+
+    /* Navbar */
+    .navbar { background: #004aad; color: #fff; padding: 1rem; position: sticky; top: 0; }
+    .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+    .navbar .brand { font-weight: bold; font-size: 1.2rem; color: #fff; text-decoration: none; }
+    .navbar .nav-links { list-style: none; display: flex; gap: 1rem; }
+    .navbar .nav-links li a { color: #fff; text-decoration: none; padding: 0.5rem; transition: background 0.3s; }
+    .navbar .nav-links li a:hover, .navbar .nav-links li a.active { background: #0066ff; border-radius: 4px; }
+    .toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #fff; }
+
+    /* Main */
+    .main { flex: 1; padding: 2rem 1rem; max-width: 1100px; margin: 0 auto; }
+    h1.page-title { text-align: center; color: #004aad; margin-bottom: 2rem; }
+
+    /* Cards */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 1.5rem; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
+    .card h3 { color: #004aad; margin-bottom: 1rem; text-align: center; }
+    .downloads { display: flex; flex-direction: column; gap: 0.5rem; text-align: center; }
+    .downloads a { display: inline-block; padding: 0.6rem 1rem; border-radius: 4px; font-size: 0.95rem; font-weight: 500; text-decoration: none; color: #fff; transition: background 0.3s; }
+    .downloads a:hover { opacity: 0.9; }
+    .btn-blue { background: #004aad; }
+    .btn-green { background: #28a745; }
+    .btn-orange { background: #ff9800; }
+
+    /* Footer */
+    .footer { background: #222; color: #fff; text-align: center; padding: 1.5rem; }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar .nav-links { display: none; flex-direction: column; background: #004aad; position: absolute; top: 60px; right: 0; width: 200px; padding: 1rem; }
+      .navbar .nav-links.show { display: flex; }
+      .toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">GTU Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="sem3.html">Semester 3</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="main">
+    <h1 class="page-title">ETC - Semester 3 Materials</h1>
+    <div class="cards">
+      <div class="card">
+        <h3>GTU Papers</h3>
+        <div class="downloads">
+          <a href="pdf/gtu etc w24.pdf" class="btn-blue" target="_blank">Papers Winter 2024</a>
+          <a href="pdf/gtu etc s25.pdf" class="btn-blue" target="_blank">Papers Summer 2025</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Solutions</h3>
+        <div class="downloads">
+          <a href="pdf/etc w24.pdf" class="btn-green" target="_blank">Solutions Winter 2024</a>
+          <a href="pdf/etc s25.pdf" class="btn-green" target="_blank">Solutions Summer 2025</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>IMP Questions</h3>
+        <div class="downloads">
+          <a href="#" class="btn-orange" target="_blank">IMP Questions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 GTU Study Hub - All Rights Reserved | Made by Trivedi Raksh</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+  </script>
+</body>
+</html>

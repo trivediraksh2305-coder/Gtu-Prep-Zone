@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Download GTU Papers, Solutions, IMP Questions for Semester 1 to 8"/>
+  <title>GTU Materials - Papers, Solutions, IMP Questions</title>
+
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #004aad;
+      color: #fff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background 0.3s;
+    }
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a.active {
+      background: #0066ff;
+      border-radius: 4px;
+    }
+    .toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+    }
+
+    /* Page Title */
+    h1.page-title {
+      text-align: center;
+      color: #004aad;
+      margin: 3rem 0 2rem;
+    }
+
+    /* Cards Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 2rem 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      color: #004aad;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #004aad;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+      }
+      .navbar .nav-links.show { display: flex; }
+      .toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">Gtu Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="materials.html">Materials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <h1 class="page-title">GTU Study Materials</h1>
+
+  <!-- Cards Grid -->
+  <div class="cards">
+    <a href="sem1.html" class="card">
+      <h3>Semester 1</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem2.html" class="card">
+      <h3>Semester 2</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem3.html" class="card">
+      <h3>Semester 3</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem4.html" class="card">
+      <h3>Semester 4</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem5.html" class="card">
+      <h3>Semester 5</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem6.html" class="card">
+      <h3>Semester 6</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem7.html" class="card">
+      <h3>Semester 7</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+    <a href="sem8.html" class="card">
+      <h3>Semester 8</h3>
+      <p>Papers • Solutions • IMP</p>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Gtu Prep Zone - All Rights Reserved | Made with Trivedi Raksh</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

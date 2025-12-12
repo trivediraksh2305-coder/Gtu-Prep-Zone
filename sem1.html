@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content="GTU sem 2 Study Materials -Chemestry, english, Programming for problme Solving, BE, Enviromental Science paper, Mathematics-1 Notes">
+  <meta name="description" content="Download GTU sem 1 study materials including chemestry notes, english pdf, GTU Enviromental Science, Mathematics-1 Notes. GTU sem 1 question paper">
+  <meta name="keywords" content="GTU ">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="GTU Prep Zone">
+  <title>GTU Semester 1 - Previous Papers, Solutions, IMP Questions</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Make body a flex container */
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #004aad;
+      color: #fff;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background 0.3s;
+    }
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a.active {
+      background: #0066ff;
+      border-radius: 4px;
+    }
+    .toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+    }
+
+    /* Main content wrapper */
+    .main {
+      flex: 1; /* pushes footer down */
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    /* Page Title */
+    h1.page-title {
+      color: #004aad;
+      margin-bottom: 2rem;
+    }
+
+    /* Alert Box */
+    .alert {
+      background: #e6f2ff;
+      border: 1px solid #b3d1ff;
+      color: #004aad;
+      padding: 1rem;
+      border-radius: 6px;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn-group { margin-top: 1rem; }
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { background: #004aad; color: #fff; }
+    .btn-primary:hover { background: #0066ff; }
+    .btn-success { background: #28a745; color: #fff; }
+    .btn-success:hover { background: #34d058; }
+    .btn-warning { background: #ffc107; color: #333; }
+    .btn-warning:hover { background: #ffdb4d; }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #004aad;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+      }
+      .navbar .nav-links.show { display: flex; }
+      .toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">Gtu Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="sem1.html">Semester 1</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="main">
+    <h1 class="page-title">Semester 1 Materials</h1>
+    <div class="alert">
+      <strong>Coming Soon!</strong> Papers, Solutions & IMP Questions will be uploaded shortly.
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn btn-primary">Download Papers</a>
+      <a href="#" class="btn btn-success">Download Solutions</a>
+      <a href="#" class="btn btn-warning">IMP Questions</a>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Gtu Prep Zone - All Rights Reserved | Made with Trivedi Raksh</p>
+  </footer>
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
