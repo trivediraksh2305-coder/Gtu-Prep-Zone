@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/contact.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/material.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SEMESTER PAGES -->
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem1.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem2.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem3.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem4.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem5.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem6.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem7.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sem8.html</loc></url>
+
+  <!-- SUBJECT PAGES (SEM 3 example) -->
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/dbms.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/ds.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/df.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/ps.html</loc></url>
+  <url><loc>https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/etc.html</loc></url>
+
+
+</urlset>
