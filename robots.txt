@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary system folders
+Disallow: /images/
+Disallow: /pdf/
+
+Sitemap: https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sitemap.xml
