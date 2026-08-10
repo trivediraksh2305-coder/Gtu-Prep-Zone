@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content="GTU sem 8 Study Materials - Summer Internship Report & Guidelines">
+  <meta name="description" content="Download GTU sem 8 Summer Internship materials including internship report guidelines, presentation templates, evaluation criteria, and sample reports. Complete guide for GTU final year internship.">
+  <meta name="keywords" content="GTU sem 8, Summer Internship GTU, Internship Report GTU, GTU Internship Guidelines, Industrial Training GTU, Summer Training Report, GTU Final Year Internship, Internship Presentation GTU">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="GTU Prep Zone">
+  <title>GTU Semester 8 - Summer Internship | Guidelines, Report, Presentation</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+
+    :root {
+      --primary: #1a4d8c;
+      --primary-dark: #0d2b4f;
+      --primary-light: #2e6ab3;
+      --accent: #ff6b35;
+      --accent-light: #ff8c5a;
+      --text-dark: #1e293b;
+      --text-light: #475569;
+      --text-white: #ffffff;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s ease;
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    }
+
+    /* Make body a flex container */
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    /* ===== NAVBAR STYLES ===== */
+    .navbar {
+      background: var(--gradient);
+      color: var(--text-white);
+      padding: 0.75rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .navbar .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-white);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.5px;
+      transition: var(--transition);
+    }
+    
+    .navbar .brand:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+    
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .navbar .nav-links li a {
+      color: var(--text-white);
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+    
+    .navbar .nav-links li a:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+    
+    .navbar .nav-links li a.active {
+      background: rgba(255, 255, 255, 0.2);
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: var(--text-white);
+      cursor: pointer;
+      transition: var(--transition);
+      padding: 0.5rem;
+    }
+    
+    .toggle:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== FIXED HERO SECTION ===== */
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-white);
+      padding: 5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" stroke="white" stroke-width="2"/><circle cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="2"/></svg>');
+      background-size: 60px;
+      opacity: 0.1;
+    }
+    
+    .hero-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-section h1 {
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      margin-bottom: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-white);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-section p {
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--text-white);
+      line-height: 1.6;
+    }
+
+    /* ===== SINGLE SUBJECT CARD ===== */
+    .single-subject {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    
+    .subject-main-card {
+      background: var(--bg-white);
+      border-radius: 30px;
+      box-shadow: var(--shadow-lg);
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 107, 53, 0.1);
+    }
+    
+    .subject-main-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: var(--gradient);
+    }
+    
+    .subject-icon-large {
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 107, 53, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 4rem;
+      color: var(--accent);
+      animation: pulse 2s infinite;
+    }
+    
+    .subject-main-card h2 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 1rem;
+    }
+    
+    .subject-code {
+      display: inline-block;
+      background: rgba(26, 77, 140, 0.1);
+      color: var(--primary);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    
+    .subject-main-card p {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    
+    .highlight-item {
+      background: var(--bg-light);
+      padding: 1.2rem;
+      border-radius: 16px;
+      text-align: center;
+    }
+    
+    .highlight-item i {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+    
+    .highlight-item h4 {
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+      font-size: 1rem;
+    }
+    
+    .highlight-item p {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      margin-bottom: 0;
+    }
+
+    /* ===== MAIN CONTENT WRAPPER ===== */
+    .main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* ===== INTERNSHIP RESOURCES CARDS ===== */
+    .resources-title {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      margin: 3rem 0 2rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .resources-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      padding: 2rem;
+      transition: var(--transition);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .card-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(255, 107, 53, 0.1);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+    
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.8rem 1.8rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+    
+    .btn-download:hover {
+      background: var(--accent-light);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      margin-top: 1rem;
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* ===== COMING SOON CARD ===== */
+    .coming-soon-card {
+      background: var(--bg-white);
+      border-radius: 30px;
+      box-shadow: var(--shadow-lg);
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 107, 53, 0.1);
+    }
+    
+    .coming-soon-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--gradient);
+    }
+    
+    .coming-soon-icon {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 107, 53, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 3rem;
+      color: var(--accent);
+      animation: pulse 2s infinite;
+    }
+    
+    .coming-soon-card h2 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 1rem;
+    }
+    
+    .coming-soon-card p {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e2e8f0;
+      border-radius: 10px;
+      margin: 2rem 0;
+      overflow: hidden;
+    }
+    
+    .progress-fill {
+      width: 80%;
+      height: 100%;
+      background: var(--gradient);
+      border-radius: 10px;
+      animation: shimmer 2s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .notification-form {
+      display: flex;
+      gap: 1rem;
+      max-width: 450px;
+      margin: 2rem auto 0;
+    }
+    
+    .notification-form input {
+      flex: 1;
+      padding: 1rem 1.2rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      transition: var(--transition);
+    }
+    
+    .notification-form input:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
+    }
+    
+    .notification-form button {
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    
+    .notification-form button:hover {
+      background: var(--accent-light);
+      transform: translateY(-3px);
+    }
+
+    /* ===== BUTTONS GROUP ===== */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+      border: 2px solid transparent;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: var(--text-white);
+    }
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+    
+    .btn-success {
+      background: #28a745;
+      color: var(--text-white);
+    }
+    .btn-success:hover {
+      background: #34ce57;
+    }
+    
+    .btn-warning {
+      background: #ffc107;
+      color: var(--text-dark);
+    }
+    .btn-warning:hover {
+      background: #ffdb4d;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #0a1f33 100%);
+      color: var(--text-white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    
+    .footer p {
+      max-width: 1200px;
+      margin: 0 auto;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      .navbar .container {
+        padding: 0.5rem 0;
+      }
+      
+      .navbar .brand {
+        font-size: 1.2rem;
+      }
+      
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        width: 250px;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(10px);
+        background: rgba(26, 77, 140, 0.95);
+      }
+      
+      .navbar .nav-links.show { 
+        display: flex; 
+      }
+      
+      .navbar .nav-links li {
+        width: 100%;
+      }
+      
+      .navbar .nav-links li a {
+        display: block;
+        padding: 0.8rem 1rem;
+        text-align: left;
+      }
+      
+      .toggle { 
+        display: block; 
+      }
+      
+      .hero-section {
+        padding: 3rem 1.5rem;
+      }
+      
+      .hero-section h1 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-section p {
+        font-size: 1.1rem;
+      }
+      
+      .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .subject-main-card {
+        padding: 2rem 1.5rem;
+      }
+      
+      .subject-main-card h2 {
+        font-size: 2rem;
+      }
+      
+      .notification-form {
+        flex-direction: column;
+      }
+      
+      .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .navbar .brand {
+        font-size: 1rem;
+      }
+      
+      .hero-section {
+        padding: 2.5rem 1rem;
+      }
+      
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-section p {
+        font-size: 1rem;
+      }
+      
+      .subject-main-card h2 {
+        font-size: 1.6rem;
+      }
+      
+      .subject-icon-large {
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 20px rgba(255, 107, 53, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 53, 0);
+      }
+    }
+    
+    .hero-section, .subject-main-card, .cards, .coming-soon-card {
+      animation: fadeInUp 0.8s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">Gtu Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="sem8.html">Semester 8</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Semester 8 Materials</h1>
+      <p>Complete guide and resources for GTU Summer Internship including report writing guidelines, presentation templates, evaluation criteria, and sample reports for final year students.</p>
+    </div>
+  </section>
+
+  <!-- Single Subject Main Card -->
+  <section class="single-subject">
+    <div class="subject-main-card">
+      <div class="subject-icon-large">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <h2>Summer Internship</h2>
+      <span class="subject-code">Course Code: 2080004 / 2180004</span>
+      <p>Industrial training, internship report, and presentation for GTU final year students. Complete guide to help you ace your summer internship with flying colors.</p>
+      
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <i class="fas fa-file-alt"></i>
+          <h4>Report Guidelines</h4>
+          <p>Format, structure, and writing tips</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-chart-pie"></i>
+          <h4>Presentation</h4>
+          <p>PPT templates and tips</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-check-circle"></i>
+          <h4>Evaluation</h4>
+          <p>Marks distribution & criteria</p>
+        </div>
+      </div>
+      
+      <a href="#" class="btn-download" onclick="return false;"><i class="fas fa-download"></i> Download Complete Guide</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="main">
+    
+    <h2 class="resources-title">📋 Internship Resources</h2>
+    
+    <!-- Resource Cards -->
+    <div class="cards">
+      
+      <!-- Report Guidelines Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-file-word"></i>
+        </div>
+        <h3>Internship Report Guidelines</h3>
+        <p>Complete format and structure for your summer internship report as per GTU standards. Includes chapter breakdown, word count, and formatting tips.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> Download PDF</a>
+      </div>
+      
+      <!-- Presentation Template Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-file-powerpoint"></i>
+        </div>
+        <h3>Presentation Template</h3>
+        <p>Ready-to-use PowerPoint template for your internship viva presentation. Includes slide structure, content guidelines, and design tips.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> Download PPT</a>
+      </div>
+      
+      <!-- Sample Reports Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <h3>Sample Reports</h3>
+        <p>Reference internship reports from previous year toppers across different domains - IT, Computer, Mechanical, Civil, and more.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> View Samples</a>
+      </div>
+      
+      <!-- Evaluation Criteria Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-clipboard-check"></i>
+        </div>
+        <h3>Evaluation Criteria</h3>
+        <p>Detailed breakdown of marks distribution, assessment parameters, and what evaluators look for in your report and presentation.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> Download PDF</a>
+      </div>
+      
+      <!-- Company List Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3>Companies for Internship</h3>
+        <p>Curated list of companies offering summer internships for GTU students with application process, stipend info, and contact details.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> Download List</a>
+      </div>
+      
+      <!-- Viva Questions Card -->
+      <div class="card">
+        <div class="card-icon">
+          <i class="fas fa-question-circle"></i>
+        </div>
+        <h3>Viva Questions</h3>
+        <p>Most frequently asked questions during internship viva with sample answers and preparation tips to help you score high.</p>
+        <a href="#" class="btn-outline" onclick="return false;"><i class="fas fa-download"></i> Download PDF</a>
+      </div>
+    </div>
+    
+    <!-- Coming Soon Card (Optional - can be removed if all resources are ready) -->
+    <div class="coming-soon-card">
+      <div class="coming-soon-icon">
+        <i class="fas fa-hourglass-half"></i>
+      </div>
+      <h2>More Resources Coming Soon!</h2>
+      <p>We're adding more internship resources including domain-specific guides, company reviews, and video tutorials.</p>
+      
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      
+      <div class="notification-form">
+        <input type="email" placeholder="Enter your email for updates" id="notifyEmail">
+        <button onclick="alert('Notification service coming soon!')"><i class="fas fa-bell"></i> Notify Me</button>
+      </div>
+    </div>
+    
+    <!-- Download Buttons -->
+    <div class="btn-group">
+      <a href="#" class="btn btn-primary" onclick="return false;"><i class="fas fa-file-pdf"></i> Complete Internship Kit</a>
+      <a href="#" class="btn btn-success" onclick="return false;"><i class="fas fa-check-circle"></i> Report Format</a>
+      <a href="#" class="btn btn-warning" onclick="return false;"><i class="fas fa-question-circle"></i> IMP Questions</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+ <footer class="footer">
+    <p>&copy; 2025 GTU Prep Zone - India's Most Trusted Free GTU Study Materials Platform | All Rights Reserved | Made with <i class="fas fa-heart" style="color: #ff6b35;"></i> by Trivedi Raksh & Team | Empowering 50,000+ GTU Students Across Gujarat</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+ <!-- AI Support Bot -->
+<a href="ai.html" class="ai-support-bot">
+    <div class="ai-bot-icon">
+        🤖
+    </div>
+
+    <div class="ai-bot-text">
+        <div class="ai-bot-title">Support Bot</div>
+        <div class="ai-bot-status">
+            <span class="online-dot"></span>
+            Online
+        </div>
+    </div>
+</a>
+
+<style>
+/* AI Support Bot - Modern Gradient */
+.ai-support-bot {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 20px 12px 16px;
+
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border-radius: 50px;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+
+    z-index: 9999;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.ai-support-bot:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 35px rgba(37, 99, 235, 0.5);
+}
+
+.ai-support-bot:active {
+    transform: scale(0.95);
+}
+
+.ai-bot-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.ai-support-bot:hover .ai-bot-icon {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.ai-bot-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.ai-bot-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.ai-bot-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.online-dot {
+    width: 7px;
+    height: 7px;
+
+    background: #4ade80;
+    border-radius: 50%;
+
+    display: inline-block;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(0.8);
+    }
+}
+
+/* Glow effect on the dot */
+.online-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: ripple-dot 2s ease-in-out infinite;
+}
+
+@keyframes ripple-dot {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .ai-support-bot {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 16px 10px 12px;
+        gap: 10px;
+    }
+
+    .ai-bot-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .ai-bot-title {
+        font-size: 13px;
+    }
+
+    .ai-bot-status {
+        font-size: 11px;
+    }
+}
+
+</style>
+
+
+
+</body>
+</html>

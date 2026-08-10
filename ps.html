@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Probability & Statistics (PS) - GTU Semester 3 Study Materials</title>
+  <meta name="title" content="Probability & Statistics (PS) - GTU Sem 3 Notes, Papers, Solutions & IMP Questions">
+  <meta name="description" content="Download GTU Semester 3 Probability & Statistics (PS) materials: Previous year papers (Winter/Summer), detailed solutions, formula sheets, important questions, and chapter-wise notes for 3130706. Master probability distributions, correlation, regression, and hypothesis testing.">
+  <meta name="keywords" content="GTU PS sem 3, Probability and Statistics GTU, PS 3130706 notes, GTU PS previous papers, Probability distributions GTU, Correlation and regression GTU, Hypothesis testing GTU, PS important questions, Statistics formulas GTU, Engineering mathematics GTU">
+  <meta name="author" content="GTU Prep Zone">
+  <meta property="og:title" content="Probability & Statistics (PS) - Free GTU Sem 3 Study Materials">
+  <meta property="og:description" content="Complete Probability & Statistics resources for GTU Semester 3. Download papers, solutions, formulas, and IMP questions.">
+  <meta property="og:url" content="https://www.gtuprepzone.com/ps.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.gtuprepzone.com/ps.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    
+    :root {
+      --primary: #1a4d8c;
+      --primary-dark: #0d2b4f;
+      --primary-light: #2e6ab3;
+      --accent: #ff6b35;
+      --accent-light: #ff8c5a;
+      --text-dark: #1e293b;
+      --text-light: #475569;
+      --text-white: #ffffff;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s ease;
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    }
+    
+    html, body { 
+      height: 100%; 
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+    
+    /* ===== NAVBAR STYLES ===== */
+    .navbar {
+      background: var(--gradient);
+      color: var(--text-white);
+      padding: 0.75rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .navbar .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-white);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.5px;
+      transition: var(--transition);
+    }
+    
+    .navbar .brand:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+    
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .navbar .nav-links li a {
+      color: var(--text-white);
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+    
+    .navbar .nav-links li a:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+    
+    .navbar .nav-links li a.active {
+      background: rgba(255, 255, 255, 0.2);
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: var(--text-white);
+      cursor: pointer;
+      transition: var(--transition);
+      padding: 0.5rem;
+    }
+    
+    .toggle:hover {
+      transform: scale(1.1);
+    }
+    
+    /* ===== PAGE HEADER ===== */
+    .page-header {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: linear-gradient(135deg, #1a4d8c 0%, #0d2b4f 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+      top: -200px;
+      right: -200px;
+      border-radius: 50%;
+    }
+
+    .page-header::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+      bottom: -200px;
+      left: -200px;
+      border-radius: 50%;
+    }
+
+    .page-header .hero-content {
+      max-width: 900px;
+      z-index: 2;
+    }
+
+    .page-header h1 {
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .page-header p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      opacity: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .subject-code {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 0.6rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+    }
+    
+    /* ===== IMPROVED SEO TRENDING SECTION ===== */
+    /* ===== IMPROVED SEO TRENDING SECTION ===== */
+.seo-trending-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 30px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: visible; /* Changed from hidden to visible */
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.seo-trending-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none; /* Added to prevent interference */
+}
+
+/* FIXED HEADING STYLES - Make it fully visible */
+.seo-trending-section h2 {
+  color: var(--primary);
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 1.5rem 0;
+  padding: 0; /* Removed any padding that might cause cutoff */
+  position: relative;
+  display: block; /* Changed from flex for better compatibility */
+  width: 100%;
+  line-height: 1.3;
+  word-wrap: break-word;
+  overflow: visible; /* Ensure nothing is hidden */
+  text-align: left; /* Added for consistency */
+}
+
+.seo-trending-section h2 span {
+  background: var(--accent);
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: 0.8rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+    
+    .seo-intro-paragraph {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: rgba(255, 107, 53, 0.05);
+      border-radius: 16px;
+      border-left: 4px solid var(--accent);
+      line-height: 1.8;
+    }
+    
+    .seo-intro-paragraph strong {
+      color: var(--accent);
+    }
+    
+    .seo-keywords-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .seo-keyword-block {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    
+    .seo-keyword-block:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .seo-keyword-block h3 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .seo-keyword-block h3 i {
+      color: var(--accent);
+    }
+    
+    .seo-keyword-block p {
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+    
+    .seo-keyword-block p .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    
+    .seo-long-tail {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: 16px;
+      color: white;
+    }
+    
+    .seo-long-tail p {
+      font-size: 1rem;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+    
+    .seo-long-tail i {
+      color: var(--accent);
+      margin-right: 10px;
+    }
+    
+    .seo-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    
+    .seo-tag {
+      background: white;
+      color: var(--primary);
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid rgba(255, 107, 53, 0.3);
+      transition: var(--transition);
+    }
+    
+    .seo-tag:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    
+    /* ===== SUBJECT INFO CARDS ===== */
+    .subject-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    .info-card {
+      background: var(--bg-white);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .info-card i {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    
+    .info-card h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .info-card p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    /* ===== MAIN CONTENT ===== */
+    .main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      margin: 3rem 0 2rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      padding: 2rem;
+      transition: var(--transition);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .card h3 i {
+      color: var(--accent);
+    }
+    
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .downloads a {
+      display: inline-block;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-white);
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .downloads a:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .btn-blue { 
+      background: var(--primary);
+    }
+    .btn-blue:hover { background: var(--primary-light); }
+    
+    .btn-green { 
+      background: #28a745;
+    }
+    .btn-green:hover { background: #34ce57; }
+    
+    .btn-orange { 
+      background: var(--accent);
+    }
+    .btn-orange:hover { background: var(--accent-light); }
+    
+    .btn-purple {
+      background: #6f42c1;
+    }
+    .btn-purple:hover { background: #8557e0; }
+    
+    .btn-teal {
+      background: #20c997;
+    }
+    .btn-teal:hover { background: #2ee6b0; }
+    
+    .file-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+      padding: 0 0.5rem;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+    
+    .file-info i {
+      color: var(--accent);
+    }
+    
+    /* ===== TOPICS SECTION ===== */
+    .topics-section {
+      margin-top: 4rem;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 3rem 2rem;
+      border-radius: 30px;
+    }
+    
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      max-width: 900px;
+      margin: 2rem auto 0;
+    }
+    
+    .topic-item {
+      background: var(--bg-white);
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    
+    .topic-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      background: var(--primary);
+      color: white;
+    }
+    
+    .topic-item i {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .topic-item:hover i {
+      color: white;
+    }
+    
+    .topic-item span {
+      display: block;
+      font-weight: 500;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #0a1f33 100%);
+      color: var(--text-white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    
+    .footer p {
+      max-width: 1200px;
+      margin: 0 auto;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      .navbar .container {
+        padding: 0.5rem 0;
+      }
+      
+      .navbar .brand {
+        font-size: 1.2rem;
+      }
+      
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        width: 250px;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(10px);
+        background: rgba(26, 77, 140, 0.95);
+      }
+      
+      .navbar .nav-links.show { 
+        display: flex; 
+      }
+      
+      .navbar .nav-links li {
+        width: 100%;
+      }
+      
+      .navbar .nav-links li a {
+        display: block;
+        padding: 0.8rem 1rem;
+        text-align: left;
+      }
+      
+      .toggle { 
+        display: block; 
+      }
+      
+      .page-header {
+        padding: 2rem 1rem;
+      }
+      
+      .seo-trending-section {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+      }
+      
+      .seo-keywords-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .subject-info {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }
+      
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* Mobile heading fix */
+      .seo-trending-section h2 {
+        font-size: 1.6rem;
+        gap: 0.5rem;
+      }
+      
+      .seo-trending-section h2 span {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.8rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .navbar .brand {
+        font-size: 1rem;
+      }
+      
+      .seo-keywords-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .topics-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .seo-trending-section h2 {
+        font-size: 1.4rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+      }
+      
+      .seo-trending-section h2 span {
+        margin-left: 0;
+        white-space: normal;
+      }
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .page-header, .seo-trending-section, .subject-info, .card, .topics-section {
+      animation: fadeInUp 0.8s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">GTU Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="sem3.html">Semester 3</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="hero-content">
+      <h1>Probability & Statistics (PS)</h1>
+      <p>Complete study materials for GTU Semester 3 - Subject Code: 3130706</p>
+      <span class="subject-code">
+        <i class="fas fa-book"></i> Computer Engineering • IT • CSE
+      </span>
+    </div>
+  </section>
+
+  <!-- IMPROVED SEO-FRIENDLY TRENDING SECTION -->
+  <section class="seo-trending-section">
+    <h2>Probability & Statistics Study Guide <span>2025</span></h2>
+    
+    <div class="seo-intro-paragraph">
+      <p><strong>Master Probability & Statistics for GTU Semester 3 (PS 3130706)</strong> with our complete study guide. <strong>Download important questions, solved papers, syllabus, formula sheets, and notes PDF for Winter and Summer exams</strong>. This subject covers probability distributions, correlation & regression analysis, sampling techniques, and hypothesis testing — carrying 20–25% exam weightage. Our chapter-wise explanations and <strong></strong>previous year solutions help Computer Engineering, IT and CSE students score maximum marks in GTU exams.</p>
+    </div>
+    
+    <div class="seo-keywords-grid">
+      <div class="seo-keyword-block">
+        <h3><i class="fas fa-dice"></i> Probability Distributions</h3>
+        <p>Master <span class="highlight">binomial distribution</span>, <span class="highlight">poisson distribution</span>, and <span class="highlight">normal distribution</span> with our step-by-step solved examples. These topics carry <strong>20-25% weightage</strong> in GTU exams and are essential for data science careers.</p>
+      </div>
+      
+      <div class="seo-keyword-block">
+        <h3><i class="fas fa-chart-scatter"></i> Correlation & Regression</h3>
+        <p>Learn <span class="highlight">Karl Pearson's coefficient</span>, <span class="highlight">Spearman's rank correlation</span>, and <span class="highlight">regression analysis</span> techniques. Our <strong>simplified explanations</strong> help you solve numerical problems quickly in exams.</p>
+      </div>
+      
+      <div class="seo-keyword-block">
+        <h3><i class="fas fa-flask"></i> Hypothesis Testing</h3>
+        <p>Understand <span class="highlight">Z-test</span>, <span class="highlight">t-test</span>, and <span class="highlight">Chi-square test</span> with real-world examples. These concepts are <strong>frequently asked in GTU papers</strong> and form the foundation of statistical inference.</p>
+      </div>
+      
+      <div class="seo-keyword-block">
+        <h3><i class="fas fa-calculator"></i> Sampling Techniques</h3>
+        <p>Explore <span class="highlight">Central Limit Theorem</span>, <span class="highlight">sampling distributions</span>, and <span class="highlight">estimation methods</span>. Our <strong>chapter-wise IMP questions</strong> cover all important formulas and theorems.</p>
+      </div>
+    </div>
+    
+    <div class="seo-long-tail">
+      <p><i class="fas fa-quote-left"></i> Looking for <strong>GTU Probability and Statistics solved papers</strong>? Need <strong>PS 3130706 important questions</strong>? Want <strong>free PDF notes for semester 3</strong>? Our comprehensive collection includes <strong>winter 2024 papers</strong>, <strong>summer 2024 solutions</strong>, <strong>formula sheets</strong>, and <strong>chapter-wise important questions</strong> specifically designed for <strong>Computer Engineering</strong> and <strong>IT students</strong>. Download instantly and start preparing for your <strong>GTU exams</strong> today!</p>
+    </div>
+    
+    <div class="seo-tags">
+      <span class="seo-tag"><i class="fas fa-tag"></i> Bayes theorem</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Random variables</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Moment generating function</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Chebyshev inequality</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> ANOVA one-way</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Time series analysis</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Probability density function</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Cumulative distribution</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Conditional probability</span>
+      <span class="seo-tag"><i class="fas fa-tag"></i> Mathematical expectation</span>
+    </div>
+  </section>
+
+  <!-- Subject Info Cards -->
+  <section class="subject-info">
+    <div class="info-card">
+      <i class="fas fa-file-pdf"></i>
+      <h4>35+ Papers</h4>
+      <p>Winter & Summer (2010-2024)</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-check-circle"></i>
+      <h4>Detailed Solutions</h4>
+      <p>Step-by-step answers</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-star"></i>
+      <h4>IMP Questions</h4>
+      <p>Chapter-wise important topics</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2 class="section-title">Download PS Study Materials</h2>
+    
+    <div class="cards">
+      <!-- GTU Papers Card -->
+      <div class="card">
+        <h3><i class="fas fa-file-pdf"></i> GTU Papers</h3>
+        <div class="downloads">
+          <a href="pdf/ps-summer ps 24.pdf" class="btn-blue" target="_blank">
+            <i class="fas fa-download"></i> Papers Summer 2025
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-file-pdf"></i> 6 PDFs</span>
+            <span><i class="fas fa-calendar"></i> Dec 2024</span>
+          </div>
+          
+          <a href="pdf/ps-summer 2025.pdf" class="btn-blue" target="_blank">
+            <i class="fas fa-download"></i> Papers Summer 2024
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-file-pdf"></i> 6 PDFs</span>
+            <span><i class="fas fa-calendar"></i> May 2024</span>
+          </div>
+          
+          <a href="" class="btn-purple" target="_blank">
+            <i class="fas fa-file-zipper"></i> All Papers (2010-2024)
+          </a>
+        </div>
+      </div>
+      
+      <!-- Solutions Card -->
+      <div class="card">
+        <h3><i class="fas fa-check-circle"></i> Solutions</h3>
+        <div class="downloads">
+          <a href="pdf/ps s24.pdf.pdf" class="btn-green" target="_blank">
+            <i class="fas fa-download"></i> Solutions Summer 2024
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-file-pdf"></i> 25 Pages</span>
+            <span><i class="fas fa-check"></i> Step-by-step</span>
+          </div>
+          
+          <a href="pdf/ps s24.pdf.pdf" class="btn-green" target="_blank">
+            <i class="fas fa-download"></i> Solutions Winter 2023
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-file-pdf"></i> 22 Pages</span>
+            <span><i class="fas fa-check"></i> Verified</span>
+          </div>
+          
+          <a href="pdf/ps s24.pdf.pdf" class="btn-teal" target="_blank">
+            <i class="fas fa-layer-group"></i> Solutions Bundle (10 Papers)
+          </a>
+        </div>
+      </div>
+      
+      <!-- Formulas & IMP Card -->
+      <div class="card">
+        <h3><i class="fas fa-flask"></i> Formulas & IMP</h3>
+        <div class="downloads">
+          <a href="pdf/ps formula.pdf" class="btn-orange" target="_blank">
+            <i class="fas fa-download"></i> Complete Formula Sheet
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-file-pdf"></i> 15 Pages</span>
+            <span><i class="fas fa-star"></i> All formulas</span>
+          </div>
+          
+          <a href="" class="btn-orange" target="_blank">
+            <i class="fas fa-download"></i> IMP Questions (Chapter-wise)
+          </a>
+          <div class="file-info">
+            <span><i class="fas fa-list"></i> 50+ Questions</span>
+            <span><i class="fas fa-tag"></i> Most repeated</span>
+          </div>
+          
+          <a href="" class="btn-purple" target="_blank">
+            <i class="fas fa-calculator"></i> Important Numericals
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Topics Covered Section -->
+    <section class="topics-section">
+      <h2 style="text-align: center; color: var(--primary); font-size: 2rem; margin-bottom: 1rem;">📚 Topics Covered in PS</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Complete syllabus coverage for GTU Semester 3</p>
+      
+      <div class="topics-grid">
+        <div class="topic-item">
+          <i class="fas fa-dice"></i>
+          <span>Probability Theory</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-bar"></i>
+          <span>Random Variables</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Binomial Distribution</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-pie"></i>
+          <span>Poisson Distribution</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-bell-curve"></i>
+          <span>Normal Distribution</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-scatter"></i>
+          <span>Correlation</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Regression Analysis</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-flask"></i>
+          <span>Hypothesis Testing</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-calculator"></i>
+          <span>Sampling Theory</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-sigma"></i>
+          <span>ANOVA</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-chart-line"></i>
+          <span>Time Series</span>
+        </div>
+        <div class="topic-item">
+          <i class="fas fa-cube"></i>
+          <span>Probability Distributions</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 GTU Prep Zone - India's Most Trusted Free GTU Study Materials Platform | All Rights Reserved | Made with <i class="fas fa-heart" style="color: #ff6b35;"></i> by Trivedi Raksh & Team | Empowering 50,000+ GTU Students Across Gujarat</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+  </script>
+
+ <!-- AI Support Bot -->
+<a href="ai.html" class="ai-support-bot">
+    <div class="ai-bot-icon">
+        🤖
+    </div>
+
+    <div class="ai-bot-text">
+        <div class="ai-bot-title">Support Bot</div>
+        <div class="ai-bot-status">
+            <span class="online-dot"></span>
+            Online
+        </div>
+    </div>
+</a>
+
+<style>
+/* AI Support Bot - Modern Gradient */
+.ai-support-bot {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 20px 12px 16px;
+
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border-radius: 50px;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+
+    z-index: 9999;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.ai-support-bot:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 35px rgba(37, 99, 235, 0.5);
+}
+
+.ai-support-bot:active {
+    transform: scale(0.95);
+}
+
+.ai-bot-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.ai-support-bot:hover .ai-bot-icon {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+.ai-bot-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.ai-bot-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.ai-bot-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.online-dot {
+    width: 7px;
+    height: 7px;
+
+    background: #4ade80;
+    border-radius: 50%;
+
+    display: inline-block;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(0.8);
+    }
+}
+
+/* Glow effect on the dot */
+.online-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: ripple-dot 2s ease-in-out infinite;
+}
+
+@keyframes ripple-dot {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .ai-support-bot {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 16px 10px 12px;
+        gap: 10px;
+    }
+
+    .ai-bot-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .ai-bot-title {
+        font-size: 13px;
+    }
+
+    .ai-bot-status {
+        font-size: 11px;
+    }
+}
+
+</style>
+
+
+
+</body>
+</html>
