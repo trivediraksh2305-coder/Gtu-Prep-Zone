@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content="GTU Semester 4 Study Materials - OOP, Discrete Maths, COA, PEM, OS & Virtualization Notes & Papers">
+  <meta name="description" content="Download GTU Semester 4 complete study materials: Object Oriented Programming (OOP), Discrete Mathematics, Computer Organization & Architecture (COA), Principles of Economics & Management (PEM), Operating System & Virtualization (OSV). Free PDF downloads for Computer, IT, and allied branches.">
+  <meta name="keywords" content="GTU sem 4 materials, GTU sem 4 OOP notes, Discrete Mathematics GTU, Computer Organization and Architecture GTU, Principles of Economics and Management GTU, Operating System and Virtualization GTU, GTU sem 4 previous year question papers, GTU sem 4 important questions, Computer engineering sem 4 GTU, IT sem 4 study materials, OOP with C++ GTU, COA GTU, OSV GTU, PEM GTU, Discrete Maths GTU">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="GTU Prep Zone">
+  <meta property="og:title" content="GTU Semester 4 - Free Study Materials, Previous Papers & Solutions">
+  <meta property="og:description" content="Access comprehensive GTU Semester 4 study materials for all subjects: OOP, Discrete Maths, COA, PEM, OS & Virtualization. Free PDF downloads.">
+  <meta property="og:url" content="https://www.gtuprepzone.com/sem4.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.gtuprepzone.com/sem4.html">
+  <title>GTU Semester 4 - Free OOP, Discrete Maths, COA, PEM, OS & Virtualization Study Materials</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    /* ===== RESET & VARIABLES ===== */
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    
+    :root {
+      --primary: #1a4d8c;
+      --primary-dark: #0d2b4f;
+      --primary-light: #2e6ab3;
+      --accent: #ff6b35;
+      --accent-light: #ff8c5a;
+      --text-dark: #1e293b;
+      --text-light: #475569;
+      --text-white: #ffffff;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --transition: all 0.3s ease;
+      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    }
+    
+    html, body { 
+      height: 100%; 
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+    
+    /* ===== NAVBAR STYLES ===== */
+    .navbar {
+      background: var(--gradient);
+      color: var(--text-white);
+      padding: 0.75rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    .navbar .brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-white);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.5px;
+      transition: var(--transition);
+    }
+    
+    .navbar .brand:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+    
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+    }
+    
+    .navbar .nav-links li a {
+      color: var(--text-white);
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+    
+    .navbar .nav-links li a:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+    
+    .navbar .nav-links li a.active {
+      background: rgba(255, 255, 255, 0.2);
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: var(--text-white);
+      cursor: pointer;
+      transition: var(--transition);
+      padding: 0.5rem;
+    }
+    
+    .toggle:hover {
+      transform: scale(1.1);
+    }
+    
+    /* ===== HERO SECTION ===== */
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: var(--text-white);
+      padding: 4rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" stroke="white" stroke-width="2"/><circle cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="2"/></svg>');
+      background-size: 60px;
+      opacity: 0.1;
+    }
+    
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .hero-section h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    
+    .hero-section p {
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    .hero-badge {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: var(--transition);
+    }
+    
+    .hero-badge:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-3px);
+    }
+    
+    .hero-badge i {
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+    
+    /* ===== SEMESTER INFO ===== */
+    .semester-info {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .info-card {
+      background: var(--bg-white);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: var(--transition);
+      height: 100%;
+    }
+    
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 107, 53, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    
+    .info-text h3 {
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    
+    .info-text p {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    
+    /* ===== MAIN CONTENT ===== */
+    .main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 2rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    
+    /* Subject Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      text-align: left;
+      padding: 2rem;
+      transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .card-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.2) 100%);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .card-icon i {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+    
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .card .subject-full {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      border-bottom: 1px dashed #e2e8f0;
+      padding-bottom: 0.8rem;
+    }
+    
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    
+    .meta-item {
+      background: rgba(26, 77, 140, 0.05);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    
+    .meta-item i {
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+    
+    .trending-keywords {
+      background: rgba(255, 107, 53, 0.05);
+      padding: 1rem;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+    
+    .trending-keywords p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    
+    .trending-keywords i {
+      color: var(--accent);
+      margin-right: 0.3rem;
+    }
+    
+    .card-footer {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .btn-browse {
+      background: var(--accent);
+      color: var(--text-white);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+    
+    .btn-browse:hover {
+      background: var(--accent-light);
+      transform: translateX(5px);
+    }
+    
+    .badge-popular {
+      background: rgba(255, 107, 53, 0.15);
+      color: var(--accent);
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    
+    /* Quick Resources Section */
+    .resources-section {
+      margin-top: 4rem;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 3rem 2rem;
+      border-radius: 30px;
+    }
+    
+    .resources-title {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 1rem;
+    }
+    
+    .resources-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+    }
+    
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .resource-item {
+      background: var(--bg-white);
+      padding: 1.2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      border: 1px solid transparent;
+    }
+    
+    .resource-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+    
+    .resource-item i {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    .resource-item span {
+      display: block;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, #0a1f33 100%);
+      color: var(--text-white);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    
+    .footer p {
+      max-width: 1200px;
+      margin: 0 auto;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      .navbar .container {
+        padding: 0.5rem 0;
+      }
+      
+      .navbar .brand {
+        font-size: 1.2rem;
+      }
+      
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        width: 250px;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(10px);
+        background: rgba(26, 77, 140, 0.95);
+      }
+      
+      .navbar .nav-links.show { 
+        display: flex; 
+      }
+      
+      .navbar .nav-links li {
+        width: 100%;
+      }
+      
+      .navbar .nav-links li a {
+        display: block;
+        padding: 0.8rem 1rem;
+        text-align: left;
+      }
+      
+      .toggle { 
+        display: block; 
+      }
+      
+      .hero-section {
+        padding: 3rem 1rem;
+      }
+      
+      .hero-badge {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .resources-section {
+        padding: 2rem 1rem;
+      }
+      
+      .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .navbar .brand {
+        font-size: 1rem;
+      }
+      
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero-section p {
+        font-size: 0.95rem;
+      }
+      
+      .card {
+        padding: 1.5rem;
+      }
+      
+      .card-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .resources-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .hero-section, .info-grid, .card, .resources-section {
+      animation: fadeInUp 0.8s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">GTU Prep Zone</a>
+      <button class="toggle" id="navToggle">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a class="active" href="sem4.html">Semester 4</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Semester 4 Study Materials</h1>
+      <p>Access comprehensive GTU Semester 4 resources for Computer Engineering, IT, and allied branches. Download OOP, Discrete Maths, COA, PEM, OS & Virtualization materials absolutely free.</p>
+      
+      <div class="hero-badges">
+        <span class="hero-badge"><i class="fas fa-calendar-alt"></i> Winter & Summer Papers 2010-2024</span>
+        <span class="hero-badge"><i class="fas fa-book-open"></i> GTU Latest Syllabus 2024-25</span>
+        <span class="hero-badge"><i class="fas fa-star"></i> Chapter-wise IMP Questions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Semester Info Cards -->
+  <section class="semester-info">
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-file-pdf"></i></div>
+        <div class="info-text">
+          <h3>200+ Previous Papers</h3>
+          <p>All subjects covered from 2010-2024</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-check-double"></i></div>
+        <div class="info-text">
+          <h3>Detailed Solutions</h3>
+          <p>Step-by-step answers by experts</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-question-circle"></i></div>
+        <div class="info-text">
+          <h3>IMP Questions</h3>
+          <p>Most repeated topics chapter-wise</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon"><i class="fas fa-download"></i></div>
+        <div class="info-text">
+          <h3>Free Downloads</h3>
+          <p>No login, No payment required</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2 class="section-title">Subject-wise Study Materials</h2>
+    
+    <!-- Subject Cards -->
+    <div class="cards">
+      
+      <!-- OOP Card -->
+      <a href="oop.html" class="card">
+        <div class="card-icon">
+          <i class="fas fa-cube"></i>
+        </div>
+        <h3>OOP</h3>
+        <div class="subject-full">Object Oriented Programming - 1 (3130701)</div>
+        
+        <div class="card-meta">
+          <span class="meta-item"><i class="fas fa-file-pdf"></i> 45+ Papers</span>
+          <span class="meta-item"><i class="fas fa-lightbulb"></i> IMP Questions</span>
+          <span class="meta-item"><i class="fas fa-check-circle"></i> With Solutions</span>
+        </div>
+        
+        <div class="trending-keywords">
+          <p><i class="fas fa-fire"></i> <strong>Trending:</strong> Master C++ classes, inheritance, polymorphism, and Java basics. Practice GTU OOP viva questions and interview problems.</p>
+        </div>
+        
+        <div class="card-footer">
+          <span class="btn-browse">Browse OOP <i class="fas fa-arrow-right"></i></span>
+          <span class="badge-popular"><i class="fas fa-chart-line"></i> Most Downloaded</span>
+        </div>
+      </a>
+      
+      <!-- Discrete Maths Card -->
+      <a href="discrete.html" class="card">
+        <div class="card-icon">
+          <i class="fas fa-superscript"></i>
+        </div>
+        <h3>Discrete Maths</h3>
+        <div class="subject-full">Discrete Mathematics (3130707)</div>
+        
+        <div class="card-meta">
+          <span class="meta-item"><i class="fas fa-file-pdf"></i> 40+ Papers</span>
+          <span class="meta-item"><i class="fas fa-lightbulb"></i> IMP Topics</span>
+          <span class="meta-item"><i class="fas fa-check-circle"></i> With Solutions</span>
+        </div>
+        
+        <div class="trending-keywords">
+          <p><i class="fas fa-fire"></i> <strong>Trending:</strong> Learn sets, relations, graph theory, combinatorics, and logic. Practice GTU discrete mathematics problems with solutions.</p>
+        </div>
+        
+        <div class="card-footer">
+          <span class="btn-browse">Browse Discrete <i class="fas fa-arrow-right"></i></span>
+          <span class="badge-popular"><i class="fas fa-chart-line"></i> High Demand</span>
+        </div>
+      </a>
+      
+      <!-- COA Card -->
+      <a href="coa.html" class="card">
+        <div class="card-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <h3>COA</h3>
+        <div class="subject-full">Computer Organization & Architecture (3130708)</div>
+        
+        <div class="card-meta">
+          <span class="meta-item"><i class="fas fa-file-pdf"></i> 40+ Papers</span>
+          <span class="meta-item"><i class="fas fa-lightbulb"></i> IMP Numericals</span>
+          <span class="meta-item"><i class="fas fa-check-circle"></i> With Solutions</span>
+        </div>
+        
+        <div class="trending-keywords">
+          <p><i class="fas fa-fire"></i> <strong>Trending:</strong> Master CPU design, memory hierarchy, pipeline, and I/O systems. Practice GTU COA numerical problems and architecture concepts.</p>
+        </div>
+        
+        <div class="card-footer">
+          <span class="btn-browse">Browse COA <i class="fas fa-arrow-right"></i></span>
+          <span class="badge-popular"><i class="fas fa-star"></i> Popular</span>
+        </div>
+      </a>
+      
+      <!-- PEM Card -->
+      <a href="pem.html" class="card">
+        <div class="card-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>PEM</h3>
+        <div class="subject-full">Principles of Economics & Management (3130709)</div>
+        
+        <div class="card-meta">
+          <span class="meta-item"><i class="fas fa-file-pdf"></i> 35+ Papers</span>
+          <span class="meta-item"><i class="fas fa-lightbulb"></i> IMP Questions</span>
+          <span class="meta-item"><i class="fas fa-check-circle"></i> With Solutions</span>
+        </div>
+        
+        <div class="trending-keywords">
+          <p><i class="fas fa-fire"></i> <strong>Trending:</strong> Master economic principles, management functions, organizational behavior, and financial management concepts.</p>
+        </div>
+        
+        <div class="card-footer">
+          <span class="btn-browse">Browse PEM <i class="fas fa-arrow-right"></i></span>
+          <span class="badge-popular"><i class="fas fa-chart-line"></i> Most Viewed</span>
+        </div>
+      </a>
+      
+      <!-- OS & Virtualization Card -->
+      <a href="osv.html" class="card">
+        <div class="card-icon">
+          <i class="fas fa-windows"></i>
+        </div>
+        <h3>OS & Virtualization</h3>
+        <div class="subject-full">Operating System & Virtualization (3130710)</div>
+        
+        <div class="card-meta">
+          <span class="meta-item"><i class="fas fa-file-pdf"></i> 35+ Papers</span>
+          <span class="meta-item"><i class="fas fa-lightbulb"></i> IMP Topics</span>
+          <span class="meta-item"><i class="fas fa-check-circle"></i> With Solutions</span>
+        </div>
+        
+        <div class="trending-keywords">
+          <p><i class="fas fa-fire"></i> <strong>Trending:</strong> Master process management, memory management, file systems, virtualization concepts, and cloud computing basics.</p>
+        </div>
+        
+        <div class="card-footer">
+          <span class="btn-browse">Browse OSV <i class="fas fa-arrow-right"></i></span>
+          <span class="badge-popular"><i class="fas fa-star"></i> Recommended</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Quick Resources Section -->
+    <section class="resources-section">
+      <h3 class="resources-title">📚 Quick Resources</h3>
+      <p class="resources-subtitle">Most accessed materials for Semester 4</p>
+      <div class="resources-grid">
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-file-pdf"></i>
+          <span>OOP Notes</span>
+        </a>
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-file-pdf"></i>
+          <span>Discrete Maths Notes</span>
+        </a>
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-file-pdf"></i>
+          <span>COA Notes</span>
+        </a>
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-file-pdf"></i>
+          <span>PEM Notes</span>
+        </a>
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-file-pdf"></i>
+          <span>OSV Notes</span>
+        </a>
+        <a href="#" class="resource-item" onclick="return false;">
+          <i class="fas fa-question-circle"></i>
+          <span>IMP Questions</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 GTU Prep Zone - India's Most Trusted Free GTU Study Materials Platform | All Rights Reserved | Made with <i class="fas fa-heart" style="color: #ff6b35;"></i> by Trivedi Raksh & Team | Empowering 50,000+ GTU Students Across Gujarat</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <!-- AI Support Bot -->
+  <a href="ai.html" class="ai-support-bot">
+    <div class="ai-bot-icon">
+      🤖
+    </div>
+    <div class="ai-bot-text">
+      <div class="ai-bot-title">Support Bot</div>
+      <div class="ai-bot-status">
+        <span class="online-dot"></span>
+        Online
+      </div>
+    </div>
+  </a>
+
+  <style>
+    /* AI Support Bot - Modern Gradient */
+    .ai-support-bot {
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px 12px 16px;
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      border-radius: 50px;
+      text-decoration: none;
+      color: #ffffff;
+      box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+      z-index: 9999;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+    }
+    .ai-support-bot:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 35px rgba(37, 99, 235, 0.5);
+    }
+    .ai-support-bot:active {
+      transform: scale(0.95);
+    }
+    .ai-bot-icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      font-size: 22px;
+      transition: transform 0.3s ease;
+    }
+    .ai-support-bot:hover .ai-bot-icon {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    .ai-bot-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.2;
+    }
+    .ai-bot-title {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .ai-bot-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .online-dot {
+      width: 7px;
+      height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.8); }
+    }
+    .online-dot::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: ripple-dot 2s ease-in-out infinite;
+    }
+    @keyframes ripple-dot {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(2.5); opacity: 0; }
+    }
+    @media (max-width: 600px) {
+      .ai-support-bot {
+        right: 15px;
+        bottom: 15px;
+        padding: 10px 16px 10px 12px;
+        gap: 10px;
+      }
+      .ai-bot-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+      .ai-bot-title {
+        font-size: 13px;
+      }
+      .ai-bot-status {
+        font-size: 11px;
+      }
+    }
+  </style>
+
+</body>
+</html>
