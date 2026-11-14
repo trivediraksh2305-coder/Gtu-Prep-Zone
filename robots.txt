@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/sitemap.xml
