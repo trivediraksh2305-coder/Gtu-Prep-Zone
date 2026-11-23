@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>GTU Agile UI/UX Notes, Papers, Solutions & Important Questions – Sem 7</title>
+
+    <meta name="description" content="Get GTU Semester 7 Agile and UI/UX study materials, previous year question papers, solved papers, important questions, notes and exam preparation resources for IT and Computer Engineering students.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/agile-ux.html">
+
+    <meta name="author" content="GTU Prep Zone">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GTU Agile UI/UX Study Materials – Semester 7">
+    <meta property="og:description" content="Explore GTU Agile UI/UX notes, important questions, previous year papers and solved solutions for Semester 7.">
+    <meta property="og:url" content="https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/agile-ux.html">
+    <meta property="og:site_name" content="GTU Prep Zone">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GTU Agile UI/UX Study Materials">
+    <meta name="twitter:description" content="Free GTU Agile UI/UX study materials, notes, papers and solutions.">
+
+    <!-- Structured Data: Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Study Materials",
+          "item": "https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/materials.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Agile and UI/UX",
+          "item": "https://trivediraksh2305-coder.github.io/Gtu-Prep-Zone/agile-ux.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I download GTU Agile UI/UX question papers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can access available GTU Agile and UI/UX previous year question papers from the question paper section of GTU Prep Zone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Agile UI/UX study materials free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GTU Prep Zone provides free access to its available Agile UI/UX study materials, question papers, notes and solutions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What topics are covered in Agile and UI/UX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Topics include Agile methodology, Scrum, Kanban, Extreme Programming, user interface design, user experience design, wireframing, prototyping, usability testing and Human-Computer Interaction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I prepare for GTU Agile UI/UX exams using previous papers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Previous year question papers are useful for understanding question formats and practising exam preparation. Students should also study the applicable GTU syllabus."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* ===== RESET & VARIABLES ===== */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        :root {
+            --primary: #1a4d8c;
+            --primary-dark: #0d2b4f;
+            --primary-light: #2e6ab3;
+            --accent: #ff6b35;
+            --accent-light: #ff8c5a;
+            --text-dark: #1e293b;
+            --text-light: #475569;
+            --text-white: #ffffff;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --transition: all 0.3s ease;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        }
+
+        html, body { 
+            height: 100%; 
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* ===== NAVBAR STYLES (matching site) ===== */
+        .navbar {
+            background: var(--gradient);
+            color: var(--text-white);
+            padding: 0.75rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .navbar .brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-white);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.5px;
+            transition: var(--transition);
+        }
+
+        .navbar .brand:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .navbar .nav-links li a {
+            color: var(--text-white);
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .navbar .nav-links li a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .navbar .nav-links li a.active {
+            background: rgba(255, 255, 255, 0.2);
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .toggle {
+            display: none;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: var(--text-white);
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 0.5rem;
+        }
+
+        .toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* ===== BREADCRUMB ===== */
+        .breadcrumb {
+            font-size: 13px;
+            color: var(--text-light);
+            padding: 20px 0 12px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: var(--bg-white);
+            padding: 2rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 20px;
+            margin: 15px 0 25px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.1);
+            color: var(--accent);
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(26px, 4vw, 36px);
+            line-height: 1.3;
+            margin-bottom: 14px;
+            color: var(--primary);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 13px;
+            color: var(--text-dark);
+        }
+
+        .muted {
+            color: var(--text-light);
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .hero-stats span {
+            background: var(--bg-light);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--primary);
+            border: 1px solid rgba(26,77,140,0.08);
+        }
+
+        /* ===== SECTION CARDS ===== */
+        .section {
+            background: var(--bg-white);
+            padding: 2rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 20px;
+            margin-bottom: 22px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .toc {
+            background: rgba(26, 77, 140, 0.04);
+            border-radius: 14px;
+            padding: 20px 25px;
+            margin-top: 18px;
+            border: 1px solid rgba(26,77,140,0.08);
+        }
+
+        .toc ul {
+            padding-left: 22px;
+            columns: 2;
+        }
+
+        .toc li {
+            margin: 6px 0;
+        }
+
+        .toc a {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .toc a:hover {
+            color: var(--accent);
+        }
+
+        /* ===== TOPIC GRID ===== */
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .topic-card {
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 14px;
+            padding: 17px;
+            background: var(--bg-white);
+            transition: var(--transition);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(255,107,53,0.2);
+        }
+
+        .topic-card h3 {
+            color: var(--primary);
+            font-size: 16px;
+        }
+
+        .topic-card p {
+            color: var(--text-light);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* ===== DOWNLOAD CARDS ===== */
+        .download-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: 1px solid rgba(0,0,0,0.06);
+            padding: 18px 20px;
+            border-radius: 14px;
+            margin: 13px 0;
+            background: var(--bg-white);
+            transition: var(--transition);
+        }
+
+        .download-card:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: rgba(26,77,140,0.15);
+        }
+
+        .download-card h3 {
+            font-size: 16px;
+            margin-bottom: 3px;
+            color: var(--primary);
+        }
+
+        .download-card p {
+            margin: 3px 0 0;
+            color: var(--text-light);
+            font-size: 13px;
+        }
+
+        .download-btn {
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: var(--transition);
+            box-shadow: 0 4px 10px rgba(255,107,53,0.25);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .download-btn:hover {
+            background: var(--accent-light);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255,107,53,0.35);
+        }
+
+        /* ===== ANSWER BOXES ===== */
+        .answer {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 14px;
+            margin: 15px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .answer ol,
+        .answer ul {
+            padding-left: 24px;
+        }
+
+        .answer li {
+            margin-bottom: 7px;
+        }
+
+        .answer h3 {
+            color: var(--primary);
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        /* ===== COMPARISON TABLE ===== */
+        .comparison {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison th,
+        .comparison td {
+            border: 1px solid rgba(0,0,0,0.06);
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .comparison th {
+            background: rgba(26,77,140,0.06);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .comparison td {
+            color: var(--text-dark);
+        }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 17px;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .faq-item p {
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        /* ===== RELATED LINKS ===== */
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .related-links a {
+            background: rgba(26,77,140,0.05);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .related-links a:hover {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER (matching site) ===== */
+    /* ===== FOOTER (matching site, high-contrast text) ===== */
+.footer {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #0a1f33 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff !important;
+    opacity: 0.95;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #bfdbfe;
+    text-decoration: underline;
+}
+
+.footer i.fa-heart {
+    color: #ff6b35 !important;
+    margin: 0 2px;
+}
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .navbar .container {
+                padding: 0.5rem 0;
+            }
+
+            .navbar .brand {
+                font-size: 1.2rem;
+            }
+
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                background: rgba(26, 77, 140, 0.95);
+                position: absolute;
+                top: 70px;
+                right: 1rem;
+                width: 250px;
+                padding: 1rem;
+                border-radius: 12px;
+                box-shadow: var(--shadow-lg);
+                backdrop-filter: blur(10px);
+            }
+
+            .navbar .nav-links.show { 
+                display: flex; 
+            }
+
+            .navbar .nav-links li {
+                width: 100%;
+            }
+
+            .navbar .nav-links li a {
+                display: block;
+                padding: 0.8rem 1rem;
+                text-align: left;
+            }
+
+            .toggle { 
+                display: block; 
+            }
+
+            .hero, .section {
+                padding: 1.5rem;
+            }
+
+            .toc ul {
+                columns: 1;
+            }
+
+            .download-card {
+                align-items: flex-start;
+            }
+
+            .download-btn {
+                display: inline-block;
+            }
+
+            .comparison {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar .brand {
+                font-size: 1rem;
+            }
+
+            .hero, .section {
+                padding: 1.2rem;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar (matching site) -->
+<nav class="navbar">
+    <div class="container">
+        <a class="brand" href="index.html">GTU Prep Zone</a>
+        <button class="toggle" id="navToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a class="active" href="sem7.html">Semester 7</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> /
+        <a href="materials.html">Study Materials</a> /
+        <span>Agile and UI/UX</span>
+    </nav>
+
+    <!-- Main Introduction -->
+    <section class="hero">
+
+        <span class="tag">GTU Semester 7 Study Materials</span>
+
+        <h1>GTU Agile and UI/UX Study Materials, Notes, Papers & Solutions</h1>
+
+        <p>
+            Looking for GTU Semester 7 Agile and UI/UX study materials?
+            This page provides a collection of learning resources for
+            Computer Engineering and Information Technology students.
+            Access available previous year question papers, solved papers,
+            important questions and exam preparation materials in one place.
+        </p>
+
+        <p>
+            Learn important concepts of Agile software development,
+            Scrum, Kanban, Extreme Programming (XP), User Interface Design,
+            User Experience Design, prototyping, usability testing and
+            Human-Computer Interaction (HCI).
+        </p>
+
+        <p>
+            GTU Prep Zone helps students organise their exam preparation
+            with accessible study resources and an AI study assistant
+            for understanding academic questions.
+        </p>
+
+        <div class="hero-stats">
+            <span>GTU Semester 7</span>
+            <span>Computer Engineering</span>
+            <span>Information Technology</span>
+            <span>Free Study Resources</span>
+        </div>
+
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="section">
+
+        <h2>Explore Agile and UI/UX Study Materials</h2>
+
+        <p class="muted">
+            Navigate directly to the topic or resource you need.
+        </p>
+
+        <div class="toc">
+            <ul>
+                <li><a href="#about">About the Subject</a></li>
+                <li><a href="#syllabus">Topics Covered</a></li>
+                <li><a href="#notes">Study Materials and Notes</a></li>
+                <li><a href="#papers">GTU Question Papers</a></li>
+                <li><a href="#solutions">Solved Papers</a></li>
+                <li><a href="#important">Important Questions</a></li>
+                <li><a href="#learning">Concept Explanations</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Subject Introduction -->
+    <section class="section" id="about">
+
+        <h2>What is Agile and UI/UX?</h2>
+
+        <p>
+            Agile and UI/UX combines concepts from modern software
+            development and user-centred product design.
+            Agile focuses on developing software through iterative
+            development, continuous feedback and collaboration.
+            UI/UX focuses on designing digital products that are
+            functional, accessible and easy to use.
+        </p>
+
+        <h3>Agile Software Development</h3>
+
+        <p>
+            Agile is an iterative approach to software development
+            in which a project is divided into smaller development
+            cycles. Teams work collaboratively, review progress
+            frequently and adapt to changing requirements.
+        </p>
+
+        <h3>User Interface Design (UI)</h3>
+
+        <p>
+            User Interface Design deals with the visual and interactive
+            elements of a digital product. It includes buttons,
+            navigation menus, typography, colours, layouts and forms.
+            A good interface helps users interact with an application
+            easily and consistently.
+        </p>
+
+        <h3>User Experience Design (UX)</h3>
+
+        <p>
+            User Experience Design focuses on the overall experience
+            of a person while using a product or service. It includes
+            understanding user needs, research, information architecture,
+            usability and improving the complete user journey.
+        </p>
+
+    </section>
+
+    <!-- Topics -->
+    <section class="section" id="syllabus">
+
+        <h2>Important Topics in Agile and UI/UX</h2>
+
+        <p>
+            The following topics provide a subject-wise learning
+            checklist. Refer to your applicable GTU syllabus for
+            the official unit structure and examination coverage.
+        </p>
+
+        <div class="topic-grid">
+
+            <article class="topic-card">
+                <h3>Agile Methodology</h3>
+                <p>
+                    Agile principles, Agile Manifesto, iterative
+                    development, adaptive planning and collaboration.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Scrum Framework</h3>
+                <p>
+                    Scrum roles, Product Owner, Scrum Master,
+                    development team, sprint planning and reviews.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Kanban</h3>
+                <p>
+                    Kanban boards, workflow visualisation,
+                    work-in-progress limits and continuous delivery.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Extreme Programming</h3>
+                <p>
+                    XP practices, pair programming, continuous
+                    integration, testing and refactoring.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>User Interface Design</h3>
+                <p>
+                    UI principles, visual hierarchy, typography,
+                    colours, navigation and layout.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>User Experience Design</h3>
+                <p>
+                    User research, personas, user journeys,
+                    information architecture and usability.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Wireframing and Prototyping</h3>
+                <p>
+                    Low-fidelity wireframes, high-fidelity designs,
+                    prototypes and design validation.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Usability Testing</h3>
+                <p>
+                    Testing methods, user feedback, evaluation
+                    techniques and usability improvements.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Human-Computer Interaction</h3>
+                <p>
+                    HCI fundamentals, interaction models,
+                    accessibility and user-centred design.
+                </p>
+            </article>
+
+            <article class="topic-card">
+                <h3>Design Thinking</h3>
+                <p>
+                    Empathise, define, ideate, prototype and test
+                    in the design thinking process.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Question Papers -->
+    <section class="section" id="papers">
+
+        <h2>GTU Agile and UI/UX Previous Year Question Papers</h2>
+
+        <p>
+            Previous year GTU question papers help students understand
+            examination formats, question patterns and the way topics
+            are presented in university examinations.
+        </p>
+
+        <p>
+            Practise available Winter and Summer examination papers
+            and compare questions across different examination sessions.
+        </p>
+
+        <div class="download-card">
+            <div>
+                <h3>Summer 2025 Question Paper</h3>
+                <p>GTU Agile and UI/UX previous examination paper.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Download Paper
+            </a>
+        </div>
+
+        <div class="download-card">
+            <div>
+                <h3>Summer 2026 Question Paper</h3>
+                <p>GTU Agile and UI/UX examination paper.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Download Paper
+            </a>
+        </div>
+
+        <div class="download-card">
+            <div>
+                <h3>All Previous Year Papers</h3>
+                <p>Access the available examination paper archive.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-file-zipper"></i> View All Papers
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Solutions -->
+    <section class="section" id="solutions">
+
+        <h2>GTU Agile UI/UX Solved Papers and Solutions</h2>
+
+        <p>
+            Solved papers provide reference answers and explanations
+            for practising university examination questions.
+            Use these resources to understand answer structure,
+            important concepts and technical terminology.
+        </p>
+
+        <div class="download-card">
+            <div>
+                <h3>Summer 2025 Solutions</h3>
+                <p>Detailed answers for the available examination paper.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-check-circle"></i> Download Solutions
+            </a>
+        </div>
+
+        <div class="download-card">
+            <div>
+                <h3>Summer 2026 Solutions</h3>
+                <p>Reference answers and explanations.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-check-circle"></i> Download Solutions
+            </a>
+        </div>
+
+        <div class="download-card">
+            <div>
+                <h3>Complete Solutions Archive</h3>
+                <p>Access the available solved examination papers.</p>
+            </div>
+            <a class="download-btn" href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+               target="_blank" rel="noopener">
+                <i class="fas fa-file-zipper"></i> View Solutions
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Important Questions -->
+    <section class="section" id="important">
+
+        <h2>GTU Agile and UI/UX Important Questions with Answers</h2>
+
+        <p>
+            The following are practice questions covering important
+            concepts from Agile software development and UI/UX.
+            They are study questions, not guaranteed examination questions.
+        </p>
+
+        <div class="answer">
+
+            <h3>Q1. What is Agile methodology?</h3>
+
+            <p><strong>Answer:</strong></p>
+
+            <ol>
+                <li>Agile is an iterative and incremental software development approach.</li>
+                <li>It divides a project into smaller development cycles.</li>
+                <li>It encourages continuous customer feedback and collaboration.</li>
+                <li>It allows changing requirements during development.</li>
+                <li>It focuses on delivering working software frequently.</li>
+            </ol>
+
+        </div>
+
+        <div class="answer">
+
+            <h3>Q2. Explain the Scrum framework.</h3>
+
+            <p><strong>Answer:</strong></p>
+
+            <ol>
+                <li>Scrum is an Agile framework used to manage complex projects.</li>
+                <li>Work is divided into fixed-length cycles called Sprints.</li>
+                <li>The Product Owner manages and prioritises the Product Backlog.</li>
+                <li>The Scrum Master helps the team follow Scrum practices.</li>
+                <li>Developers work together to create the product increment.</li>
+                <li>Sprint Planning, Daily Scrum, Sprint Review and Sprint Retrospective are important Scrum events.</li>
+            </ol>
+
+        </div>
+
+        <div class="answer">
+
+            <h3>Q3. Differentiate between UI and UX.</h3>
+
+            <table class="comparison">
+
+                <thead>
+                    <tr>
+                        <th>UI Design</th>
+                        <th>UX Design</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Focuses on the user interface.</td>
+                        <td>Focuses on the complete user experience.</td>
+                    </tr>
+                    <tr>
+                        <td>Deals with colours, buttons and layouts.</td>
+                        <td>Deals with research, usability and user journeys.</td>
+                    </tr>
+                    <tr>
+                        <td>Improves visual appearance and interaction.</td>
+                        <td>Improves ease of use and user satisfaction.</td>
+                    </tr>
+                    <tr>
+                        <td>Concerned with interface presentation.</td>
+                        <td>Concerned with the overall product experience.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="answer">
+
+            <h3>Q4. What is a Kanban board?</h3>
+
+            <p><strong>Answer:</strong></p>
+
+            <ol>
+                <li>A Kanban board is a visual tool used to manage workflow.</li>
+                <li>It represents tasks using cards.</li>
+                <li>Tasks are arranged in columns such as To Do, In Progress and Done.</li>
+                <li>It helps teams identify pending and ongoing work.</li>
+                <li>Work-in-progress limits help prevent excessive multitasking.</li>
+            </ol>
+
+        </div>
+
+        <div class="answer">
+
+            <h3>Q5. What is wireframing in UI/UX design?</h3>
+
+            <p><strong>Answer:</strong></p>
+
+            <ol>
+                <li>Wireframing is the process of creating a basic layout of a user interface.</li>
+                <li>It represents the structure of a webpage or application screen.</li>
+                <li>It shows the placement of buttons, images, menus and content.</li>
+                <li>It helps designers plan navigation and user interaction.</li>
+                <li>It can be created before developing the final visual design.</li>
+            </ol>
+
+        </div>
+
+        <div class="answer">
+
+            <h3>Q6. What is usability testing?</h3>
+
+            <p><strong>Answer:</strong></p>
+
+            <ol>
+                <li>Usability testing evaluates how easily users can use a product.</li>
+                <li>Real users perform specific tasks using the interface.</li>
+                <li>Observers identify difficulties and user errors.</li>
+                <li>Feedback is collected to understand user problems.</li>
+                <li>The design is improved based on testing results.</li>
+            </ol>
+
+        </div>
+
+        <p>
+            For more practice questions and detailed answers,
+            explore the downloadable question bank and study materials.
+        </p>
+
+        <a class="download-btn"
+           href="https://drive.google.com/drive/folders/1rIa15AdkZplMmRNsaCVHGBE5JkkRGw7k?usp=drive_link"
+           target="_blank" rel="noopener">
+            <i class="fab fa-google-drive"></i> Download Complete Important Questions
+        </a>
+
+    </section>
+
+    <!-- Learning -->
+    <section class="section" id="learning">
+
+        <h2>Important Concepts for Agile and UI/UX Exam Preparation</h2>
+
+        <h3>1. Agile vs Traditional Software Development</h3>
+
+        <p>
+            Traditional development approaches often follow sequential
+            phases, where requirements and planning are completed before
+            implementation. Agile development works through iterations
+            and encourages frequent feedback and adaptation.
+        </p>
+
+        <h3>2. Scrum vs Kanban</h3>
+
+        <p>
+            Scrum organises work into fixed-length Sprints and defines
+            specific roles and events. Kanban visualises continuous
+            workflow and uses work-in-progress limits to manage tasks.
+        </p>
+
+        <h3>3. Wireframe vs Prototype</h3>
+
+        <p>
+            A wireframe represents the basic structure and layout of
+            an interface. A prototype demonstrates how a proposed
+            design may behave and allows users to test interactions
+            before final implementation.
+        </p>
+
+        <h3>4. Design Thinking Process</h3>
+
+        <p>
+            Design Thinking is a human-centred problem-solving approach.
+            Its commonly used five stages are Empathise, Define,
+            Ideate, Prototype and Test.
+        </p>
+
+        <h3>5. Importance of Human-Computer Interaction</h3>
+
+        <p>
+            Human-Computer Interaction studies how people interact
+            with computer systems. It helps designers develop
+            understandable, efficient, accessible and user-friendly
+            digital products.
+        </p>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+
+        <h2>Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+            <h3>1. Where can I download GTU Agile UI/UX question papers?</h3>
+            <p>
+                You can find available previous year Agile and UI/UX
+                examination papers in the question paper section above.
+                Download links redirect to Google Drive.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>2. Are GTU Prep Zone study materials free?</h3>
+            <p>
+                Yes, GTU Prep Zone provides free access to its
+                available study materials, notes, question papers
+                and solutions.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>3. Which topics should I study in Agile and UI/UX?</h3>
+            <p>
+                Important areas include Agile methodology, Scrum,
+                Kanban, XP, UI design, UX design, wireframing,
+                prototyping, usability testing and HCI.
+                Follow your official GTU syllabus for complete coverage.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>4. Can I use previous year papers for GTU preparation?</h3>
+            <p>
+                Yes. Previous year papers help you practise questions,
+                understand examination formats and revise important
+                concepts.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>5. Does GTU Prep Zone have an AI study assistant?</h3>
+            <p>
+                GTU Prep Zone also offers an AI study assistant
+                that helps students understand academic questions
+                and prepare exam-oriented answers.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Related -->
+    <section class="section">
+
+        <h2>Explore More GTU Study Materials</h2>
+
+        <p>
+            Visit GTU Prep Zone to explore other semester-wise
+            educational resources and subjects.
+        </p>
+
+        <div class="related-links">
+            <a href="index.html">GTU Prep Zone Home</a>
+            <a href="materials.html">All Study Materials</a>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer (matching site) -->
+<!-- Footer (matching site, high-contrast text) -->
+<footer class="footer">
+    <p>© 2025 GTU Prep Zone - India's Most Trusted Free GTU Study Materials Platform | All Rights Reserved | Made with <i class="fas fa-heart" style="color: #ff6b35;"></i> by Trivedi Raksh &amp; Team | Empowering 50,000+ GTU Students Across Gujarat</p>
+</footer>
+
+<!-- AI Support Bot -->
+<a href="ai.html" class="ai-support-bot">
+    <div class="ai-bot-icon">
+        🤖
+    </div>
+    <div class="ai-bot-text">
+        <div class="ai-bot-title">Support Bot</div>
+        <div class="ai-bot-status">
+            <span class="online-dot"></span>
+            Online
+        </div>
+    </div>
+</a>
+
+<style>
+    /* AI Support Bot - Modern Gradient */
+    .ai-support-bot {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px 12px 16px;
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        border-radius: 50px;
+        text-decoration: none;
+        color: #ffffff;
+        box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+        z-index: 9999;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        cursor: pointer;
+    }
+
+    .ai-support-bot:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 10px 35px rgba(37, 99, 235, 0.5);
+    }
+
+    .ai-support-bot:active {
+        transform: scale(0.95);
+    }
+
+    .ai-bot-icon {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        font-size: 22px;
+        transition: transform 0.3s ease;
+    }
+
+    .ai-support-bot:hover .ai-bot-icon {
+        transform: rotate(-10deg) scale(1.1);
+    }
+
+    .ai-bot-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+    }
+
+    .ai-bot-title {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+
+    .ai-bot-status {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .online-dot {
+        width: 7px;
+        height: 7px;
+        background: #4ade80;
+        border-radius: 50%;
+        display: inline-block;
+        animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+        0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.6;
+            transform: scale(0.8);
+        }
+    }
+
+    .online-dot::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #4ade80;
+        border-radius: 50%;
+        animation: ripple-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes ripple-dot {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(2.5);
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ai-support-bot {
+            right: 15px;
+            bottom: 15px;
+            padding: 10px 16px 10px 12px;
+            gap: 10px;
+        }
+
+        .ai-bot-icon {
+            width: 36px;
+            height: 36px;
+            font-size: 18px;
+        }
+
+        .ai-bot-title {
+            font-size: 13px;
+        }
+
+        .ai-bot-status {
+            font-size: 11px;
+        }
+    }
+</style>
+
+<script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
